@@ -16,6 +16,13 @@ namespace Utils
             int greater = Utils.Greater(x, y);
             Console.WriteLine("The greater value is " +
             greater);
+
+
+
+            // Проверка метода Swap 
+            Console.WriteLine("Before swap: " + x + ", " + y);
+            Utils.Swap(ref x, ref y);
+            Console.WriteLine("After swap: " + x + ", " + y);
         }
     }
 }
