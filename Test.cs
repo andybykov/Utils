@@ -6,20 +6,20 @@ namespace Utils
     {
         public static void Main()
         {
-            // Вводим числа
+            // Р’РІРѕРґРёРј С‡РёСЃР»Р°
             Console.WriteLine("Enter first number:");
             int x = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter second number:");
             int y = int.Parse(Console.ReadLine());
 
-            // Проверка метода Greater( ) 
+            // РџСЂРѕРІРµСЂРєР° РјРµС‚РѕРґР° Greater() 
             int greater = Utils.Greater(x, y);
             Console.WriteLine("The greater value is " +
             greater);
 
 
 
-            // Проверка метода Swap 
+            // РџСЂРѕРІРµСЂРєР° РјРµС‚РѕРґР° Swap 
             Console.WriteLine("Before swap: " + x + ", " + y);
             Utils.Swap(ref x, ref y);
             Console.WriteLine("After swap: " + x + ", " + y);
