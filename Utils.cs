@@ -22,5 +22,42 @@ namespace Utils
             a = b;
             b = temp;
         }
+
+        // Метод рассчета факториала
+        // возвращает резульат
+
+        public static bool Factorial(int n, out int answer)
+        {
+            int k; // Loop counter 
+            int f; // Working value 
+            bool ok = true; // True if okay, false if not 
+
+            // Проверям положительное ли входное значение 
+            if (n < 0)
+                ok = false;
+
+            // Вычисляет факториал как
+            // произведение всех чисел от 2 до n
+
+            try
+            {
+                checked
+                {
+                    f = 1;
+                    for (k = 2; k <= n; ++k)
+                    {
+                        f = f * k;
+                    }
+                }
+            }
+            catch (Exception) // Проверка на переполнение переменной
+            {
+                f = 0;
+                ok = false;
+            }
+            answer = f;
+
+            return ok;
+        }
     }
-}
+    }
